@@ -1,0 +1,11 @@
+<%= form_for(@post, :remote => true) do |f| %>
+  <%= hidden_field_tag :page, @page %>
+  <div id="<%= @post.id %>" class="col_tr">
+    <div class="col_td"><%= f.text_field :column_one %></div>
+    <div class="col_td"><%= f.text_field :column_two %></div>
+    <div class="col_td"><%= f.text_field :column_three %></div>
+    <div class="col_td"><%= f.text_field :column_four %></div>
+    <div class="col_td"><%= f.text_field :column_five %></div>
+    <div class="col_td"><%= f.submit %></div>
+  </div>
+<% end %>

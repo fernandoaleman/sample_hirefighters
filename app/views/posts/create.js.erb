@@ -1,0 +1,5 @@
+/*Clear the entire form*/
+$(":input:not(input[type=submit])").val("");
+
+/*Replace the html of the div post_lists with the updated new one*/
+$("#posts_list").html("<%= escape_javascript( render("posts") ) %>");
