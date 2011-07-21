@@ -5,7 +5,7 @@
     <div class="col_td"><%= post.column_three %></div>
     <div class="col_td"><%= post.column_four %></div>
     <div class="col_td"><%= post.column_five %></div>
-    <div class="col_td actions">
+    <div class="col_td_last actions">
       <%= link_to "Click Me!", "#", :id => "click_me" %>
       <% link_to "Edit", edit_post_path(post, :page => @page), :remote => true %>
       <%= link_to "Delete", post_path(post, :page => @page), :remote => true, :class => "destroy_row", :confirm => 'Are you sure?', :method => :delete %>
