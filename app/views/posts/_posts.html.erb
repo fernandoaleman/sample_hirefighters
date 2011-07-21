@@ -8,7 +8,7 @@
     <div class="col_td actions">
       <%= link_to "Click Me!", "#", :id => "click_me" %>
       <% link_to "Edit", edit_post_path(post, :page => @page), :remote => true %>
-      <%= link_to "Destroy", post_path(post, :page => @page), :remote => true, :class => "destroy_row", :confirm => 'Are you sure?', :method => :delete %>
+      <%= link_to "Delete", post_path(post, :page => @page), :remote => true, :class => "destroy_row", :confirm => 'Are you sure?', :method => :delete %>
     </div>
   </div>
 <% end %>
